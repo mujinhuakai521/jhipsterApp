@@ -20,5 +20,11 @@
 
     <cache alias="com.mycompany.myapp.domain.User.persistentTokens" uses-template="simple"/>
 
+    <cache alias="com.mycompany.myapp.domain.Author" uses-template="simple"/>
+
+    <cache alias="com.mycompany.myapp.domain.Author.books" uses-template="simple"/>
+
+    <cache alias="com.mycompany.myapp.domain.Book" uses-template="simple"/>
+
     <!-- jhipster-needle-ehcache-add-entry -->
 </config>
