@@ -26,5 +26,21 @@
 
     <cache alias="com.mycompany.myapp.domain.Book" uses-template="simple"/>
 
+    <cache alias="com.mycompany.myapp.domain.Owner" uses-template="simple"/>
+
+    <cache alias="com.mycompany.myapp.domain.Owner.cars" uses-template="simple"/>
+
+    <cache alias="com.mycompany.myapp.domain.Car" uses-template="simple"/>
+
+    <cache alias="com.mycompany.myapp.domain.ClassRoom" uses-template="simple"/>
+
+    <cache alias="com.mycompany.myapp.domain.Student" uses-template="simple"/>
+
+    <cache alias="com.mycompany.myapp.domain.Person" uses-template="simple"/>
+
+    <cache alias="com.mycompany.myapp.domain.Person.companies" uses-template="simple"/>
+
+    <cache alias="com.mycompany.myapp.domain.Company" uses-template="simple"/>
+
     <!-- jhipster-needle-ehcache-add-entry -->
 </config>

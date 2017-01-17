@@ -1,0 +1,10 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [],
+    "changelogDate": "20170117090906",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "class_room",
+    "pagination": "pager"
+}

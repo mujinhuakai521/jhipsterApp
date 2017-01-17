@@ -1,0 +1,16 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "companyName",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        }
+    ],
+    "changelogDate": "20170117095238",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "company",
+    "pagination": "pager"
+}

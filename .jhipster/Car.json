@@ -1,0 +1,18 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "owner",
+            "otherEntityName": "owner",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [],
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [],
+    "changelogDate": "20170117081611",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "car",
+    "pagination": "pager"
+}

@@ -9,6 +9,12 @@
                 "main": "Entities",
                 "author": "Author",
                 "book": "Book",
+                "owner": "Owner",
+                "car": "Car",
+                "classRoom": "Class Room",
+                "student": "Student",
+                "person": "Person",
+                "company": "Company",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
