@@ -13,9 +13,21 @@
     <include file="classpath:config/liquibase/changelog/20170117092007_added_entity_Student.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20170117094713_added_entity_Person.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20170117095238_added_entity_Company.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170119083134_added_entity_Human.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170119084637_added_entity_Bus.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170120062048_added_entity_Driver.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170120070554_added_entity_Bike.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170120084515_added_entity_School.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170120084725_added_entity_Leader.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170120090239_added_entity_Passport.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170120091016_added_entity_Citizen.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="classpath:config/liquibase/changelog/20170111032536_added_entity_constraints_Book.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20170117081611_added_entity_constraints_Car.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20170117092007_added_entity_constraints_Student.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170119084637_added_entity_constraints_Bus.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170120070554_added_entity_constraints_Bike.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170120084725_added_entity_constraints_Leader.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170120091016_added_entity_constraints_Citizen.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

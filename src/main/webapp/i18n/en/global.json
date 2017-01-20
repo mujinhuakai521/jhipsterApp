@@ -15,6 +15,14 @@
                 "student": "Student",
                 "person": "Person",
                 "company": "Company",
+                "human": "Human",
+                "bus": "Bus",
+                "driver": "Driver",
+                "bike": "Bike",
+                "school": "School",
+                "leader": "Leader",
+                "passport": "Passport",
+                "citizen": "Citizen",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <!--
+        Added the constraints for entity Bus.
+    -->
+    <changeSet id="20170119084637-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="owner_id"
+                                 baseTableName="bus"
+                                 constraintName="fk_bus_owner_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="human"/>
+
+        <addForeignKeyConstraint baseColumnNames="driver_id"
+                                 baseTableName="bus"
+                                 constraintName="fk_bus_driver_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="human"/>
+
+    </changeSet>
+</databaseChangeLog>

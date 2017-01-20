@@ -1,0 +1,39 @@
+
+<div>
+    <h2><span data-translate="jhipsterApp.bus.detail.title">Bus</span> {{vm.bus.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="jhipsterApp.bus.busName">Bus Name</span></dt>
+        <dd>
+            <span>{{vm.bus.busName}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.bus.color">Color</span></dt>
+        <dd>
+            <span>{{vm.bus.color}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.bus.carNumber">Car Number</span></dt>
+        <dd>
+            <span>{{vm.bus.carNumber}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.bus.owner">Owner</span></dt>
+        <dd>
+            <a ui-sref="human-detail({id:vm.bus.owner.id})">{{vm.bus.owner.id}}</a>
+        </dd>
+        <dt><span data-translate="jhipsterApp.bus.driver">Driver</span></dt>
+        <dd>
+            <a ui-sref="human-detail({id:vm.bus.driver.id})">{{vm.bus.driver.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="bus-detail.edit({id:vm.bus.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

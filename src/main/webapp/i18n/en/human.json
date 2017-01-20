@@ -1,0 +1,26 @@
+{
+    "jhipsterApp": {
+        "human" : {
+            "home": {
+                "title": "Humans",
+                "createLabel": "Create a new Human",
+                "createOrEditLabel": "Create or edit a Human",
+                "search": "Search for Human"
+            },
+            "created": "A new Human is created with identifier {{ param }}",
+            "updated": "A Human is updated with identifier {{ param }}",
+            "deleted": "A Human is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Human {{ id }}?"
+            },
+            "detail": {
+                "title": "Human"
+            },
+            "name": "Name",
+            "age": "Age",
+            "sex": "Sex",
+            "ownedBus": "Owned Bus",
+            "drivedBus": "Drived Bus"
+        }
+    }
+}

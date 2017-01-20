@@ -1,0 +1,35 @@
+
+<div>
+    <h2><span data-translate="jhipsterApp.leader.detail.title">Leader</span> {{vm.leader.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="jhipsterApp.leader.name">Name</span></dt>
+        <dd>
+            <span>{{vm.leader.name}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.leader.age">Age</span></dt>
+        <dd>
+            <span>{{vm.leader.age}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.leader.sex">Sex</span></dt>
+        <dd>
+            <span>{{vm.leader.sex}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.leader.school">School</span></dt>
+        <dd>
+            <a ui-sref="school-detail({id:vm.leader.school.id})">{{vm.leader.school.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="leader-detail.edit({id:vm.leader.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
