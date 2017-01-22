@@ -1,0 +1,39 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "ownedBus",
+            "otherEntityName": "bus",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "owner"
+        },
+        {
+            "relationshipName": "drivedBus",
+            "otherEntityName": "bus",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "driver"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldName": "age",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldName": "sex",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        }
+    ],
+    "changelogDate": "20170119083134",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "human",
+    "pagination": "pager"
+}

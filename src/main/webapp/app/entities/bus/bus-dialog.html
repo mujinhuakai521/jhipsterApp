@@ -1,0 +1,56 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myBusLabel" data-translate="jhipsterApp.bus.home.createOrEditLabel">Create or edit a Bus</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.bus.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.bus.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipsterApp.bus.busName" for="field_busName">Bus Name</label>
+            <input type="text" class="form-control" name="busName" id="field_busName"
+                    ng-model="vm.bus.busName"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipsterApp.bus.color" for="field_color">Color</label>
+            <input type="text" class="form-control" name="color" id="field_color"
+                    ng-model="vm.bus.color"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipsterApp.bus.carNumber" for="field_carNumber">Car Number</label>
+            <input type="text" class="form-control" name="carNumber" id="field_carNumber"
+                    ng-model="vm.bus.carNumber"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label data-translate="jhipsterApp.bus.owner" for="field_owner">Owner</label>
+            <select class="form-control" id="field_owner" name="owner" ng-model="vm.bus.owner" ng-options="human as human.id for human in vm.humans track by human.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label data-translate="jhipsterApp.bus.driver" for="field_driver">Driver</label>
+            <select class="form-control" id="field_driver" name="driver" ng-model="vm.bus.driver" ng-options="human as human.id for human in vm.humans track by human.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

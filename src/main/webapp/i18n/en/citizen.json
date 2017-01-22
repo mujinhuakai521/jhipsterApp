@@ -1,0 +1,25 @@
+{
+    "jhipsterApp": {
+        "citizen" : {
+            "home": {
+                "title": "Citizens",
+                "createLabel": "Create a new Citizen",
+                "createOrEditLabel": "Create or edit a Citizen",
+                "search": "Search for Citizen"
+            },
+            "created": "A new Citizen is created with identifier {{ param }}",
+            "updated": "A Citizen is updated with identifier {{ param }}",
+            "deleted": "A Citizen is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Citizen {{ id }}?"
+            },
+            "detail": {
+                "title": "Citizen"
+            },
+            "name": "Name",
+            "age": "Age",
+            "sex": "Sex",
+            "passport": "Passport"
+        }
+    }
+}

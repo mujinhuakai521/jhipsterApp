@@ -1,0 +1,35 @@
+
+<div>
+    <h2><span data-translate="jhipsterApp.student.detail.title">Student</span> {{vm.student.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="jhipsterApp.student.name">Name</span></dt>
+        <dd>
+            <span>{{vm.student.name}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.student.age">Age</span></dt>
+        <dd>
+            <span>{{vm.student.age}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.student.sex">Sex</span></dt>
+        <dd>
+            <span>{{vm.student.sex}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.student.classRoom">Class Room</span></dt>
+        <dd>
+            <a ui-sref="class-room-detail({id:vm.student.classRoom.id})">{{vm.student.classRoom.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="student-detail.edit({id:vm.student.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
