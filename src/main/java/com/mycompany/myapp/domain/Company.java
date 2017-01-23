@@ -45,6 +45,8 @@ public class Company implements Serializable {
         this.companyName = companyName;
     }
 
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {

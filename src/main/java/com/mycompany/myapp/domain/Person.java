@@ -33,12 +33,13 @@ public class Person implements Serializable {
     @Column(name = "sex")
     private String sex;
 
-    //(mappedBy = "person")
+//(mappedBy = "person")
+    /*
     @OneToMany
     @JsonIgnore
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<Company> companies = new HashSet<>();
-
+   */
     public Long getId() {
         return id;
     }
@@ -85,7 +86,7 @@ public class Person implements Serializable {
     public void setSex(String sex) {
         this.sex = sex;
     }
-
+/*
     public Set<Company> getCompanies() {
         return companies;
     }
@@ -94,23 +95,23 @@ public class Person implements Serializable {
         this.companies = companies;
         return this;
     }
-
+*/
     public Person addCompany(Company company) {
-        companies.add(company);
+       // companies.add(company);
         //company.setPerson(this);
         return this;
     }
 
     public Person removeCompany(Company company) {
-        companies.remove(company);
+        //companies.remove(company);
         //company.setPerson(null);
         return this;
     }
-
+/*
     public void setCompanies(Set<Company> companies) {
         this.companies = companies;
     }
-
+*/
     @Override
     public boolean equals(Object o) {
         if (this == o) {
